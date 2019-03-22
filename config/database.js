@@ -1,4 +1,2 @@
-module.exports = {
-	database:'mongodb://localhost/shopazDb' 
-}
-// process.env.MONGODB_URI
+const database = process.env.MONGODB_URI || "mongodb://localhost/shopazDb"
+module.exports = {database}
